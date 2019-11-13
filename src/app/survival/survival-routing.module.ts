@@ -4,6 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { SurvivalComponent } from './survival.component';
 
 const routes: Routes = [
+  {path: "survival", redirectTo: 'survival/bubble'},
+ 
   {
     path: "survival", component: SurvivalComponent,
     children: [
@@ -29,6 +31,8 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forRoot(routes)
   ],
-  exports: [RouterModule]
+  exports: [
+    RouterModule
+  ]
 })
 export class SurvivalRoutingModule { }

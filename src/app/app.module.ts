@@ -20,10 +20,12 @@ import { SurvivalModule } from './survival/survival.module';
   entryComponents: [],
   imports: [
     BrowserModule, 
-    IonicModule.forRoot(),
-     AppRoutingModule,
+    IonicModule.forRoot(),     
      FooModule,
-     SurvivalModule
+
+     
+     SurvivalModule,
+     AppRoutingModule
     ],
   providers: [
     StatusBar,

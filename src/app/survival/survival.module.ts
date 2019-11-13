@@ -8,11 +8,13 @@ import { SurvivalRoutingModule } from './survival-routing.module';
 
 
 
+
 @NgModule({
   declarations: [
     SurvivalComponent
   ],
   imports: [
+    
     CommonModule, 
     CompassModule,
     BubbleModule,

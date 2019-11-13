@@ -5,6 +5,9 @@ import { CompassModule } from './compass/compass.module';
 import { BubbleModule } from './bubble/bubble.module';
 import { MapModule } from './map/map.module';
 import { SurvivalRoutingModule } from './survival-routing.module';
+import { SharedModule } from '../shared/modules/shared-module/shared.module';
+
+
 
 
 
@@ -14,15 +17,15 @@ import { SurvivalRoutingModule } from './survival-routing.module';
     SurvivalComponent
   ],
   imports: [
-    
-    CommonModule, 
-    CompassModule,
-    BubbleModule,
-    MapModule, 
+    CommonModule,
+    SharedModule,
+    // CompassModule,
+    // BubbleModule,
+    // MapModule,
     SurvivalRoutingModule
-  ], 
+  ],
   exports: [
-    SurvivalComponent,
-      ]
+    //SurvivalComponent
+  ]
 })
 export class SurvivalModule { }

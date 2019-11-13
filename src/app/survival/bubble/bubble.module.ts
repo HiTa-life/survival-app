@@ -14,7 +14,7 @@ import { BubbleRoutingModule } from './bubble-routing.module';
     BubbleRoutingModule
   ],
   exports : [
-    BubbleComponent
+    //BubbleComponent
   ]
 })
 export class BubbleModule { }

@@ -15,7 +15,7 @@ import { MapRoutingModule } from './map-routing.module';
 
   ], 
   exports: [
-    MapComponent
+    //MapComponent
   ]
 })
 export class MapModule { }

@@ -14,7 +14,7 @@ import { CompassRoutingModule } from './compass-routing.module';
     CompassRoutingModule
   ],
   exports: [
-    CompassComponent
+    //CompassComponent
   ]
 })
 export class CompassModule { }

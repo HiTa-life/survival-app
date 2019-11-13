@@ -1,8 +1,24 @@
-header
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title>Survival</ion-title>
+    </ion-toolbar>
+  
+  
+  </ion-header>
+  
+  <!-- <ion-content>
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">My Navigation Bar</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  </ion-content> -->
 
-<ion-chip>
-  <ion-label name="pin" color="tertiary">Survival</ion-label>
-</ion-chip>
-
+<ion-content>
 <router-outlet></router-outlet>
-footer
+</ion-content>
+
+<app-footer></app-footer>

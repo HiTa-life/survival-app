@@ -5,9 +5,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.scss'],
 })
-export class MapComponent implements OnInit {
 
-  constructor() { }
+
+export class MapComponent implements OnInit {
+ // protected title: String;
+  constructor() {
+    //this.title = "Map";
+   }
 
   ngOnInit() {}
 

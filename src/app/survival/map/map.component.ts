@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewChecked } from '@angular/core';
+import { TitleService } from '../shared/services/title.service';
 
 @Component({
   selector: 'app-map',
@@ -7,12 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 
 
-export class MapComponent implements OnInit {
- // protected title: String;
-  constructor() {
-    //this.title = "Map";
-   }
+export class MapComponent implements AfterViewChecked {
 
-  ngOnInit() {}
+  constructor(
+    private titleService: TitleService
+  ) { }
 
+  ngAfterViewChecked(){
+    this.titleService.emitTitle("Map");
+  }
 }

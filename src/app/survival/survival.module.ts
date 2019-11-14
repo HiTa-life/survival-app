@@ -4,10 +4,7 @@ import { SurvivalComponent } from './survival.component';
 import { SurvivalRoutingModule } from './survival-routing.module';
 import { SharedModule } from '../shared/modules/shared-module/shared.module';
 import { FooterModule } from '../shared/components/footer/footer.module';
-
-
-
-
+import { HeaderModule } from '../shared/components/header/header.module';
 
 
 @NgModule({
@@ -18,6 +15,7 @@ import { FooterModule } from '../shared/components/footer/footer.module';
     CommonModule,
     SharedModule,   
     SurvivalRoutingModule,
+    HeaderModule,
     FooterModule
   ],
   exports: [

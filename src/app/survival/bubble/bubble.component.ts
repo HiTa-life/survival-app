@@ -1,4 +1,5 @@
 import { Component, OnInit, AfterContentChecked, DoCheck, AfterViewInit, AfterViewChecked } from '@angular/core';
+import { TitleService } from '../shared/services/title.service';
 
 @Component({
   selector: 'app-bubble',
@@ -8,11 +9,11 @@ import { Component, OnInit, AfterContentChecked, DoCheck, AfterViewInit, AfterVi
 
 export class BubbleComponent implements AfterViewChecked {
 
-  constructor() {
+  constructor(
+    private titleService: TitleService
+  ) { }
 
-    
-  }
   ngAfterViewChecked(){
-    console.log("bubble routed");
+    this.titleService.emitTitle("Bubble");
   }
 }

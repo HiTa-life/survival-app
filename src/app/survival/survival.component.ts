@@ -7,10 +7,7 @@ import { TitleService } from './shared/services/title.service';
   styleUrls: ['./survival.component.scss'],
 })
 export class SurvivalComponent {
-  //title: string = "Hello";
-
-  protected title: string;
-
+  
   constructor() {}
 
 }

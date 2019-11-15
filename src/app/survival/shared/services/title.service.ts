@@ -5,7 +5,9 @@ import { Subject, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class TitleService {
+
   private title: Subject<string>;
+  
   constructor() {
     this.title = new Subject();
   }

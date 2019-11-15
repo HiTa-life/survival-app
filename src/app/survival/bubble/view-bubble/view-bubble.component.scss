@@ -1,0 +1,15 @@
+:host{
+    .ruler{
+        width: 100%;
+        padding:1em;
+        background-color: greenyellow;
+       
+    }
+    .bubble{
+        display: inline-block;
+        background-color: indigo;
+        border-radius: 10%;
+        width:2em;
+        height:4em;
+         }
+}
